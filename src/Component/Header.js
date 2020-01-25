@@ -1,30 +1,23 @@
-import React  from 'react'
+import React from 'react';
 import './Styles/Header.scss';
 
-let Header = () =>{
-
-  function sandwhichBlock(){
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-
+var Header = () => {
   return(
-    <div className="topnav" id="myTopnav">
-      <a href="#home" className="active">Ivan Ramos-Hernandez</a>
-      <span className="infoNav">
-        <a href="#home">home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-      </span>
-      <a href="#!" className="icon" onClick={sandwhichBlock}>
-        <i className="fa fa-bars"></i>
-      </a>
+    <div className="headerContent">
+      <div className="row">
+        <div className="col">
+          <h1> My name is Ivan Ramos-Hernandez</h1>
+          <h2>Full Stack Software Developer</h2>
+        </div>
+        <div className="col unorderlist">
+          <ul>
+            <li>Based in portland</li>
+            <li>Based in portland</li>
+          </ul>
+        </div>
+      </div>
     </div>
   )
 }
+
 export default Header
