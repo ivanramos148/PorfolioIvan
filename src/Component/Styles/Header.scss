@@ -3,30 +3,37 @@ $headerone-color: #9C093C;
 $headertwo-color: #FFFFFF;
 $buttonColorHeader: #930D36;
 
+$primaryFont: 'Roboto', sans-serif;
+
+
+// 'Noto Sans TC', sans-serif;
+// 'Patua One', cursive;
+// 'Francois One', sans-serif
+// 'Fredoka One', cursive;
+
 .headerContent{
   padding-top: 100px;
   padding-bottom: 50px;
-  background: $main-color;
-  background: black;
-  background-image: linear-gradient(#0C0C0C, #161616);
+  }
+
   h1{
-    color: #E3B600;
-    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-family: $primaryFont;
   }
   h2{
     color: $headertwo-color;
-    font-family: 'Bebas Neue', cursive;
+    font-family: $primaryFont;
     opacity: 0.8;
   }
   h3{
     color: $headertwo-color;
-    font-family: 'Bebas Neue', cursive;
+    font-family: $primaryFont;
     opacity: 0.8;
   }
   .btnColor{
     background: $buttonColorHeader;
     color: white;
-   }
+
    .col{
      padding-right:0;
      padding-left:0;

@@ -4,6 +4,7 @@ import './Styles/Body.scss';
 var Body = () => {
   return(
     <div className="content">
+
     </div>
   )
 }

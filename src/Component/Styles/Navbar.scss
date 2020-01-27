@@ -1,13 +1,12 @@
-$NavColor: #000000;
+$NavColor: #252626;
 
+// 404F4A
 .topnav {
   overflow: hidden;
   background-color: $NavColor;
   position: fixed;
   top: 0;
   width: 100%;
-  background-image: linear-gradient(#000000, #0C0C0C);
-
   z-index:1; /*Add this*/
 
 }
@@ -20,6 +19,8 @@ $NavColor: #000000;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .topnav a:hover {
@@ -29,7 +30,6 @@ $NavColor: #000000;
 
 .topnav a.active {
   color: white;
-  font-weight: 500;
 }
 
 .topnav .icon {
@@ -68,6 +68,5 @@ $NavColor: #000000;
     top: 0;
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
   }
 }
