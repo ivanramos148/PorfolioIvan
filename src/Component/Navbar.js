@@ -11,10 +11,10 @@ let Navbar = () =>{
       x.className = "topnav";
     }
   }
-  const galaxyOx = '<RAMOS />'
+  const galaxyOx = 'RAMOS'
   return(
     <div className="topnav" id="myTopnav">
-      <a href="#home" className="active"> {galaxyOx} </a>
+      <a href="#home" className="active" className="logoFont"> {"<" + galaxyOx + " />"} </a>
       <span className="infoNav">
         <a href="#about">
           <i className="fa fa-linkedin-square"></i>

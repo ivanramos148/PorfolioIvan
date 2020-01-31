@@ -1,4 +1,5 @@
-$NavColor: #252626;
+$NavColor: #2B2B2B;
+$mainFontColor: #EBDAC5;
 
 // 404F4A
 .topnav {
@@ -8,7 +9,9 @@ $NavColor: #252626;
   top: 0;
   width: 100%;
   z-index:1; /*Add this*/
-
+  .logoFont{
+    font-family: 'Calistoga', cursive;
+  }
 }
 
 .topnav a {
@@ -19,13 +22,14 @@ $NavColor: #252626;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Calistoga', cursive;
 
 }
 
 .topnav a:hover {
   color: white;
   text-decoration: none;
+
 }
 
 .topnav a.active {
@@ -34,6 +38,7 @@ $NavColor: #252626;
 
 .topnav .icon {
   display: none;
+
 }
 .infoNav a{
   float: right;

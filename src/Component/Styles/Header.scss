@@ -1,50 +1,56 @@
 $main-color: #0E0D0D;
-$headerone-color: #9C093C;
-$headertwo-color: #FFFFFF;
-$buttonColorHeader: #930D36;
-
-$primaryFont: 'Roboto', sans-serif;
+$mainFontColor: #120E0A;
 
 
-// 'Noto Sans TC', sans-serif;
-// 'Patua One', cursive;
-// 'Francois One', sans-serif
-// 'Fredoka One', cursive;
 
 .headerContent{
-  padding-top: 100px;
-  padding-bottom: 50px;
-  }
+  background-image: url(./City.jpg);
+  background-size: cover;
+  padding: 200px;
+  background-position: center;
 
-  h1{
+  .desktopMobile{
     color: white;
-    font-family: $primaryFont;
+    font-family: 'Calistoga', cursive;
+    text-align: center;
+    h3{
+      font-size: 50px;
+      color: #EBDAC5;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $mainFontColor;
+      cursor: pointer;
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+       user-select: none; /* Non-prefixed version, currently
+                                 supported by Chrome, Opera and Firefox */
+    }
   }
-  h2{
-    color: $headertwo-color;
-    font-family: $primaryFont;
-    opacity: 0.8;
+  .mobileText{
+    display: none
   }
-  h3{
-    color: $headertwo-color;
-    font-family: $primaryFont;
-    opacity: 0.8;
-  }
-  .btnColor{
-    background: $buttonColorHeader;
-    color: white;
+}
 
-   .col{
-     padding-right:0;
-     padding-left:0;
-   }
-   ul{
-     li
-     {
-       list-style-type: none;
-       margin-right: 40px;
-       padding: 0;
-       color: white
-     }
-   }
+@media screen and (max-width: 1097px) {
+  .headerContent{
+    background-image: url(./City.jpg);
+    padding: 80px;
+    .desktopMobile{
+      display: none
+    }
+    .mobileText{
+      display: block;
+      color: white;
+      font-family: 'Calistoga', cursive;
+      text-align: center;
+        p{
+          color: #EBDAC5;
+          -webkit-text-stroke-width: .5px;
+          -webkit-text-stroke-color: $mainFontColor;
+
+        }
+      }
+  }
 }
