@@ -46,8 +46,32 @@ $mainFontColor: #120E0A;
       font-family: 'Calistoga', cursive;
       text-align: center;
         p{
+          font-size: 30px;
           color: #EBDAC5;
           -webkit-text-stroke-width: .5px;
+          -webkit-text-stroke-color: $mainFontColor;
+
+        }
+      }
+  }
+}
+@media screen and (max-width: 414px) {
+  .headerContent{
+    background-image: url(./City.jpg);
+    padding: 80px;
+    .desktopMobile{
+      display: none
+    }
+    .mobileText{
+      display: block;
+      color: white;
+      font-family: 'Calistoga', cursive;
+      text-align: center;
+        p.first-child{
+          font-size: 20px;
+          margin: 50px;
+          color: #EBDAC5;
+          -webkit-text-stroke-width: .8px;
           -webkit-text-stroke-color: $mainFontColor;
 
         }
